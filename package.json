@@ -1,6 +1,6 @@
 {
   "name": "@consolelogwarn/image-viewer-spot-zoom",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "React component library for image viewer with spot zoom functionality.",
   "scripts": {
     "rollup": "rollup -c",
@@ -11,20 +11,25 @@
   },
   "author": "Prasad <console.log.warn@gmail.com>",
   "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.2",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.1",
     "@types/react": "^17.0.40",
-    "react": "^17.0.2",
     "rollup": "^2.70.1",
     "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.6.2"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ],
-  "types": "dist/index.d.ts"
+  ]
 }

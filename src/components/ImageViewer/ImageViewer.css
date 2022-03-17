@@ -1,0 +1,14 @@
+
+.spot-zoom {
+    overflow: hidden;
+    background-size: calc(max(100%, 1000px));
+}
+
+.spot-zoom > img {
+    cursor: crosshair;
+    transition: opacity .5s;
+}
+
+.spot-zoom > img:hover {
+    opacity: 0;
+}
